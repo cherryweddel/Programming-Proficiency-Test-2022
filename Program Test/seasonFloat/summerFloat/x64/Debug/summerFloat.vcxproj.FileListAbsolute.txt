@@ -1,2 +1,0 @@
-D:\C++\作业\编程水平测试\summerFloat\x64\Debug\summerFloat.exe
-D:\C++\作业\seansonFloat\summerFloat\x64\Debug\summerFloat.exe

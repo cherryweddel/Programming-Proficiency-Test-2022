@@ -1,3 +1,0 @@
-﻿  springFloat.cpp
-D:\C++\作业\seansonFloat\springFloat\springFloat.cpp(40,26): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-  springFloat.vcxproj -> D:\C++\作业\seansonFloat\springFloat\x64\Debug\springFloat.exe

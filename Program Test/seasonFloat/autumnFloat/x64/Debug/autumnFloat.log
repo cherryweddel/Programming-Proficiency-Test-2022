@@ -1,3 +1,0 @@
-﻿  autumnFloat.cpp
-D:\C++\作业\seansonFloat\autumnFloat\autumnFloat.cpp(41,22): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-  autumnFloat.vcxproj -> D:\C++\作业\seansonFloat\autumnFloat\x64\Debug\autumnFloat.exe
