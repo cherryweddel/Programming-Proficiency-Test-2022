@@ -1,1 +1,3 @@
-﻿  winterFloat.vcxproj -> D:\C++\作业\seansonFloat\winterFloat\x64\Debug\winterFloat.exe
+﻿  winterFloat.cpp
+D:\c++\作业\编程水平测试\seansonFloat\winterFloat\winterFloat.cpp(46,22): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  winterFloat.vcxproj -> D:\C++\作业\编程水平测试\seansonFloat\winterFloat\x64\Debug\winterFloat.exe

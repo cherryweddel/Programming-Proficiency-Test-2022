@@ -6,11 +6,11 @@
 
 using namespace std;
 
-#define MAXSnow 1000	
-#define SCREEN_W 1000	
-#define SCREEN_H 500	
-#define SOWN_RADIO 3	
-#define SNOW_SLEEP 0	
+const int MAXSnow = 600;
+const int SCREEN_W = 1000;
+const int SCREEN_H = 500;
+const int SOWN_RADIO = 3;
+const int SNOW_SLEEP = 5;
 
 struct Snow
 {
@@ -18,7 +18,7 @@ struct Snow
 	int		y;
 	double	step;	
 	int		color;
-	int radui;		
+	int     radui;		
 };
 
 Snow snow[MAXSnow];

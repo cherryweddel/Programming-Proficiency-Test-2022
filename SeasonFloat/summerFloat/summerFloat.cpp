@@ -6,11 +6,10 @@
 
 using namespace std;
 
-#define MAXrain 500	
-#define SCREEN_W 1000	
-#define SCREEN_H 500	
-#define RAIN_RADIO 3	
-#define rain_SLEEP 0	
+const int MAXrain = 500;
+const int SCREEN_W = 1000;
+const int SCREEN_H = 500;
+const int rain_SLEEP = 5;  //控制速度
 
 struct Rain
 {

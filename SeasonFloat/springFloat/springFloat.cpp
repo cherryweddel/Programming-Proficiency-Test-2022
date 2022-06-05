@@ -6,11 +6,12 @@
 
 using namespace std;
 
-#define MAXflower 50	// 花总数
-#define SCREEN_W 1000
-#define SCREEN_H 500	
-#define SOWN_RADIO 3	
-#define flower_SLEEP 20	
+
+
+const int MAXflower = 50;  //数量
+const int SCREEN_W = 1000;
+const int SCREEN_H = 500;
+const int flower_SLEEP = 20;   //下落速度
 
 struct Flower
 {
@@ -37,7 +38,7 @@ void MoveStar(int i)
 	setfillcolor(RGB(0, 0, 0));
 	putimage((int)flower[i].x, flower[i].y, &img2, SRCAND);
 	putimage((int)flower[i].x, flower[i].y, &img1, SRCPAINT);
-	flower[i].y += flower[i].step;
+	flower[i].y += flower[i].step;  //下落幅度
 	if (flower[i].y > SCREEN_H)	InitStar(i);
 
 
@@ -50,8 +51,8 @@ int main()
 {
 	srand((unsigned)time(NULL));
 	initgraph(SCREEN_W, SCREEN_H);
-	loadimage(&img1, _T("D:\\1\\5.png"));
-	loadimage(&img2, _T("D:\\1\\6.png"));
+	loadimage(&img1, _T("./5.png"));
+	loadimage(&img2, _T("./6.png"));
 
 	for (int i = 0; i < MAXflower; i++)
 	{
