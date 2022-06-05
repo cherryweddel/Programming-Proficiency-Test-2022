@@ -1,6 +1,6 @@
 ﻿  autumnFloat.cpp
 D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(40,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
 D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(41,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(44,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(45,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(48,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\autumnFloat.cpp(49,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
   autumnFloat.vcxproj -> D:\C++\作业\编程水平测试\seasonFloat\autumnFloat\x64\Debug\autumnFloat.exe

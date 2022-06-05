@@ -1,3 +1,4 @@
 D:\C++\作业\编程水平测试\winterFloat\x64\Debug\winterFloat.exe
 D:\C++\作业\seansonFloat\winterFloat\x64\Debug\winterFloat.exe
 D:\c++\作业\编程水平测试\seansonFloat\winterFloat\x64\Debug\winterFloat.exe
+D:\C++\作业\编程水平测试\seasonFloat\winterFloat\x64\Debug\winterFloat.exe

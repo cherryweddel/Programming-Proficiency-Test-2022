@@ -6,11 +6,10 @@
 
 using namespace std;
 
-const int MAXSnow = 600;
+const int MAXSnow = 800;
 const int SCREEN_W = 1000;
 const int SCREEN_H = 500;
 const int SOWN_RADIO = 3;
-const int SNOW_SLEEP = 5;
 
 struct Snow
 {
@@ -37,44 +36,49 @@ void InitStar(int i)
 
 void MoveStar(int i)
 {
+
+
 	setlinecolor(RGB(0, 0, 0));
 	setfillcolor(RGB(0, 0, 0));
 	
 	fillcircle((int)snow[i].x, snow[i].y, snow[i].radui);
-
-	
 	snow[i].y += snow[i].step;
+
 	if (snow[i].y > SCREEN_H)	InitStar(i);
 
-	
 	setfillcolor(snow[i].color);
 	setlinecolor(snow[i].color);
 	fillcircle((int)snow[i].x, snow[i].y, snow[i].radui);
 
 }
-
+	void draw()
+	{
+		static bool flg = true;
+		if (flg)
+		{
+			for (int i = 0; i < MAXSnow; i++)
+				InitStar(i);
+			flg = false;
+		}
+		static int cnt = 0;cnt++;
+		while (cnt == 5e6)
+		{
+			for (int i = 0; i < MAXSnow;i++)	
+				MoveStar(i);
+			cnt = 0;
+		}
+	}
 
 int main()
 {
 	srand((unsigned)time(NULL));
-	initgraph(SCREEN_W, SCREEN_H);
-
-
-	
-	for (int i = 0; i < MAXSnow; i++)
-	{
-		InitStar(i);
-		snow[i].x = rand() % SCREEN_W;
-	}
-
+	initgraph(SCREEN_W, SCREEN_H,1);
 
 	while (1)
 	{
-		for (int i = 0; i < MAXSnow; i++)
-			MoveStar(i);
-		Sleep(SNOW_SLEEP);
+		draw();
+		
 	}
-
 
 	closegraph();
 }

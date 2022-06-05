@@ -1,3 +1,4 @@
 D:\C++\作业\编程水平测试\summerFloat\x64\Debug\summerFloat.exe
 D:\C++\作业\seansonFloat\summerFloat\x64\Debug\summerFloat.exe
 D:\c++\作业\编程水平测试\seansonFloat\summerFloat\x64\Debug\summerFloat.exe
+D:\C++\作业\编程水平测试\seasonFloat\summerFloat\x64\Debug\summerFloat.exe

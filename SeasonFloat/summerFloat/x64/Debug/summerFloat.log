@@ -1,5 +1,5 @@
 ﻿  summerFloat.cpp
-D:\c++\作业\编程水平测试\seansonFloat\summerFloat\summerFloat.cpp(42,41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-D:\c++\作业\编程水平测试\seansonFloat\summerFloat\summerFloat.cpp(45,22): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-D:\c++\作业\编程水平测试\seansonFloat\summerFloat\summerFloat.cpp(52,41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-  summerFloat.vcxproj -> D:\C++\作业\编程水平测试\seansonFloat\summerFloat\x64\Debug\summerFloat.exe
+D:\C++\作业\编程水平测试\seasonFloat\summerFloat\summerFloat.cpp(40,41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\C++\作业\编程水平测试\seasonFloat\summerFloat\summerFloat.cpp(42,22): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\C++\作业\编程水平测试\seasonFloat\summerFloat\summerFloat.cpp(48,41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  summerFloat.vcxproj -> D:\C++\作业\编程水平测试\seasonFloat\summerFloat\x64\Debug\summerFloat.exe

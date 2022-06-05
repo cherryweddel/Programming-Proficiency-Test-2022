@@ -10,7 +10,7 @@ using namespace std;
 const int MAXleaf = 40;	// 枫叶总数
 const int SCREEN_W = 1000;
 const int SCREEN_H = 500;
-const int leaf_SLEEP = 20;
+
 
 
 struct Leaf
@@ -40,37 +40,51 @@ void MoveStar(int i)
 	putimage(leaf[i].x, leaf[i].y, &img2, SRCAND);
 	putimage(leaf[i].x, leaf[i].y, &img1, SRCPAINT);
 	leaf[i].y += leaf[i].step;  //控制速度
-	if (leaf[i].y > SCREEN_H)	InitStar(i); //超出 初始化
+	if (leaf[i].y > SCREEN_H)
+	{
+		InitStar(i);
+
+	}
 	putimage(leaf[i].x, leaf[i].y, &img2, SRCAND);
 	putimage(leaf[i].x, leaf[i].y, &img1, SRCPAINT);
 }
 
-
-int main()
+void draw()
 {
-	srand((unsigned)time(NULL));
-	initgraph(SCREEN_W, SCREEN_H);
 	loadimage(&img1, _T("./1.png"));
 	loadimage(&img2, _T("./2.png"));
-	for (int i = 0; i < MAXleaf; i++)
+	static bool Flg = true;
+	if (Flg)
 	{
-		InitStar(i);
-		
+		for (int i = 0; i < MAXleaf; i++)
+			InitStar(i);
+		Flg = false;
 	}
-
-
-	while (1)
+	
+	static int cnt = 0;cnt++;
+	
+	while (cnt ==70)
 	{
 		BeginBatchDraw();
 		setbkcolor(RED);//设置背景色为红色
 		cleardevice();
-		for (int i = 0; i < MAXleaf; i++)
+		for (int i = 0; i < MAXleaf;i++)
 			MoveStar(i);
+		cnt = 0;
 		EndBatchDraw();
-		Sleep(leaf_SLEEP);
-
 	}
 
+}
+
+int main()
+{
+	srand((unsigned)time(NULL));
+    initgraph(SCREEN_W, SCREEN_H);
+
+	while (1)
+	{
+		draw();
+	}
 
 	closegraph();
 }
